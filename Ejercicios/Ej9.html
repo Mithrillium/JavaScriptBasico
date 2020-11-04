@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej9</title>
+</head>
+<body>
+    <script>
+        var cadena = prompt("Introduce una palabra o número","");
+        var indiceIzq = 0;
+        var indiceDer = cadena.length-1;
+        var indice = 1;
+        while(indice<cadena.length && cadena.charAt(indiceIzq)==cadena.charAt(indiceDer)){
+            indice++;
+            indiceDer--;
+            indiceIzq++;
+        }
+        if(indice==cadena.length){
+            alert("Es un palíndromo-capicua");
+        }else{
+            alert("No es un palíndromo-capicua");
+        }
+        //Otra forma, más simple, pero esto lo vimos en clase dias despues de mandar la práctica:
+        if(cadena == cadena.split("").reverse().toString().replace(/,/g,"")){
+            alert("(Código simple)Es un palíndromo-capicua");
+        }else{
+            alert("(Código simple)No es un palíndromo-capicua");
+        }
+        //Otra forma de obtener la cadena inversa: cadena.split("").reverse().join("");
+        //.join() une el contenido del array, separando cada índice por el caracter indicado por parámetro
+    </script>
+</body>
+</html>

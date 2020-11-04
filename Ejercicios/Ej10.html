@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej10</title>
+</head>
+<body>
+    <script>
+        var intentos = prompt("Introduce el número de intentos");
+        var iMax = prompt("Introduce el número máximo del rango");
+        var iNumAleatorio=Math.floor((Math.random() * (iMax)) + 1);
+        var i = 0;
+        var numIntroducido = 0;
+        do{
+            i++;
+            alert("Intento número"+i);
+            numIntroducido = prompt("Acierta el número");
+            if(numIntroducido>iNumAleatorio && i != intentos){
+                alert("El número que buscas es menor");
+            }
+            if(numIntroducido<iNumAleatorio && i != intentos){
+                alert("El número que buscas es mayor")
+            }
+        }while(numIntroducido != iNumAleatorio && i < intentos);
+        if(numIntroducido == iNumAleatorio){
+            alert("¡Has acertado en el intento "+ i +"!");
+        }else{
+            alert("No has acertado, el número era el "+iNumAleatorio)
+        }
+    </script>
+</body>
+</html>

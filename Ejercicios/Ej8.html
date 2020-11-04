@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej8</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Introduce un número entero","");
+        var divisor = 2;
+        var resto = num % divisor == 0;
+        while(divisor<=(num/2) && !resto){
+            divisor++;
+            resto = num % divisor == 0;
+        }
+        if(resto){
+           alert("El número no es primo");
+        }else{
+            alert("El número es primo");
+        }
+    </script>
+</body>
+</html>
