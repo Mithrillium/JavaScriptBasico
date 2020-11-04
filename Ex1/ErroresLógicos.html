@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title></title>
+    <script>
+        function power(numero, p) {
+            alert("Calculando potencia " + p + " de " + numero);
+            return numero * power(numero, p - 1);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var numero = prompt("¿A qué número le calculamos la potencia?", "");
+        var potencia = prompt("la potencia ", "");
+        var resultado = power(numero, potencia);
+        alert("La potencia de " + potencia + " de " + numero +
+            " es " + resultado);
+    </script>
+</body>
+</html>

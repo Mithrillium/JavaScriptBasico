@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej6</title>
+</head>
+<body>
+    <script>
+        var nombre = prompt("Introduce nombre y apellidos","");
+        do{
+            var repeticiones = prompt("¿Cuantas veces quieres que se repita?(mas de 0)","");
+        }while(repeticiones<=0);
+        for(var i=1;i<=repeticiones;i++){
+            document.write(nombre+"<br>")
+        }
+    </script>
+</body>
+</html>

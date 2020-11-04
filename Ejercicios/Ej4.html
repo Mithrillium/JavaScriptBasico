@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej4</title>
+</head>
+
+<body>
+    <script>
+        var num1 = prompt("Primer número", );
+        var num2 = prompt("Segundo número", );
+        if (num1 < 100 && num2 < 100) {
+            var menorMayor = "y ambos son menores que 100";
+        } else if (num1 >= 100 && num2 >= 100) {
+            var menorMayor = "y ambos son mayor o igual que 100";
+        } else {
+            var menorMayor = "y uno de ellos es mayor o igual que 100";
+        }
+        if (num1 > num2) {
+            alert("El primer número (" + num1 + ") es mayor que el segundo (" + num2 + ") " + menorMayor);
+        } else if (num1 < num2) {
+            alert("El primer número (" + num1 + ") es menor que el segundo (" + num2 + ") " + menorMayor);
+        } else {
+            alert("Los números introducidos son iguales. " + menorMayor);
+        }
+    </script>
+</body>
+
+</html>
